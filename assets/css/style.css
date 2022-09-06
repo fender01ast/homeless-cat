@@ -78,8 +78,11 @@ section{
     margin-left: 10px;
     background-color: #4a4a4a;
     width: 115px;
-    
+    transition: all 0.3s ease;
     border-radius: 0 0 9px 9px;
+}
+.nav-menu ul li:hover{
+    background-color: #6d6d6d;
 }
 .nav-menu ul li a{
     display: block;
@@ -274,6 +277,88 @@ section{
     font-size: 18px;
     display: block;
 }
+.muha__wrapper{
+    position: absolute;
+    bottom: 50%;
+    right: 6vw;
+    transform: scale(0.5);
+    animation-duration: 2.5s;
+    animation-name: moving;
+    animation-iteration-count: infinite;
+}
+.muha__wrapper2{
+    right: 22vw;
+    bottom: 59%;
+    animation-duration: 2.5s;
+    animation-name: moving2;
+}
+.muha-wing1{
+    position: absolute;
+    top: -51px;
+    left: 57px;
+    /*transition: all .2s ease;*/
+    animation-duration: .2s;
+    animation-name: wave;
+    animation-iteration-count: infinite;
+}
+.muha-wing2{
+    position: absolute;
+    top: -58px;
+    left: 31px;
+    /*transition: all .3s ease;*/
+    animation-duration: .2s;
+    animation-name: wave2;
+    animation-iteration-count: infinite;
+}
+@keyframes moving {
+    0% {
+        transform: rotateZ(0deg) translate(0px, 0px) scale(0.5);
+    }
+  
+    50% {
+        transform: rotateZ(0deg) translate(3px, 25px) scale(0.5);
+    }
+    100% {
+        transform: rotateZ(0deg) translate(0px, 0px) scale(0.5);
+    }
+}
+@keyframes moving2 {
+    0% {
+        transform: rotateZ(0deg) translate(3px, 25px) scale(0.5) rotateY(180deg);
+    }
+  
+    50% {
+        transform: rotateZ(0deg) translate(0px, 0px) scale(0.5) rotateY(180deg);
+    }
+    100% {
+        transform: rotateZ(0deg) translate(3px, 25px) scale(0.5) rotateY(180deg);
+    }
+}
+@keyframes wave {
+    0% {
+        transform: rotateZ(0deg) translate(0px, 0px);
+    }
+  
+    50% {
+        transform: rotateZ(9deg) translate(11px, 5px);
+    }
+    100% {
+        transform: rotateZ(0deg) translate(0px, 0px);
+    }
+}
+@keyframes wave2 {
+    0% {
+        transform: rotateZ(0deg) translate(0px, 0px);
+    }
+  
+    50% {
+        transform: rotateZ(-26deg) translate(-9px, -4px);
+    }
+    100% {
+        transform: rotateZ(0deg) translate(0px, 0px);
+    }
+}
+
 @media screen and (min-width: 1280px){
     .site-roadmap{
         padding-top: 54px;
@@ -327,6 +412,12 @@ section{
         margin-bottom: 35px;
     }
 }
+@media screen and (min-width: 1500px){
+    .site-roadmap li{
+        height: 135px;
+    }
+}
+
 @media screen and (min-width: 1600px){
     .site-roadmap{
         padding-top: 85px;
