@@ -1,8 +1,11 @@
 @font-face {
     font-family: "ObelixProB-cyr";
-    font-style: bold;
-    font-weight: 700;
-    src: url("../fonts/ObelixProB-cyr.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/ObelixProB-cyr.ttf") format("truetype"),
+         url("../fonts/ObelixProB-cyr.woff") format("woff"),
+         url("../fonts/ObelixProB-cyr.woff2") format("woff2");
+
 }
 
 @font-face {
@@ -200,8 +203,12 @@ section{
     right: 0;
     z-index: 1;
 }
-.comix__img{
+.comix__img-a{
     width: 45%;
+    cursor: zoom-in;
+}
+.comix__img{
+    max-width: 100%;
 }
 .s3{
     padding-top: 80px;
@@ -292,6 +299,11 @@ section{
     animation-duration: 2.5s;
     animation-name: moving2;
 }
+.muha__wrapper3{
+    bottom: auto;
+    top: 22%;
+    right: 4vw;
+}
 .muha-wing1{
     position: absolute;
     top: -51px;
@@ -324,14 +336,14 @@ section{
 }
 @keyframes moving2 {
     0% {
-        transform: rotateZ(0deg) translate(3px, 25px) scale(0.5) rotateY(180deg);
+        transform: rotateZ(0deg) translate(3px, 25px) scale(0.4) rotateY(180deg);
     }
   
     50% {
-        transform: rotateZ(0deg) translate(0px, 0px) scale(0.5) rotateY(180deg);
+        transform: rotateZ(0deg) translate(0px, 0px) scale(0.4) rotateY(180deg);
     }
     100% {
-        transform: rotateZ(0deg) translate(3px, 25px) scale(0.5) rotateY(180deg);
+        transform: rotateZ(0deg) translate(3px, 25px) scale(0.4) rotateY(180deg);
     }
 }
 @keyframes wave {
@@ -358,6 +370,31 @@ section{
         transform: rotateZ(0deg) translate(0px, 0px);
     }
 }
+.flower__img{
+    position: absolute;
+    left: 4vw;
+    bottom: 35%;
+    max-width: 50px;
+}
+
+
+figure.zoom{
+	background-position: 50% 50%;
+	position: absolute;
+	/*width: 500px;*/
+	overflow: hidden;
+	cursor: zoom-in;
+}
+figure.zoom img:hover{
+	opacity: 0;
+}
+figure.zoom img{
+	transition: opacity 0.5s;
+	display: block;
+	width: 100%;
+}
+
+
 
 @media screen and (min-width: 1280px){
     .site-roadmap{

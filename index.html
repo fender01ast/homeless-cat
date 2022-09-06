@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homeless Cat</title>
-    <link rel="stylesheet" href="assets/css/style.css?ver=1.0.3">
+    <link rel="stylesheet"  href="assets/css/lightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css?ver=1.0.4">
 </head>
 <body>
 <header class="header">
@@ -22,7 +23,11 @@
 </header>
 <main>
     <section class="s1">
-        <img src="assets/images/завод.jpg" alt="завод" class="main-bg">
+        <!--<figure class="zoom" onmousemove="zoom(event)" style="background-image: url(assets/images/завод-обрез.png)">
+            <img src="assets/images/завод-обрез.png" alt="завод" style="max-width: 100%;"/>
+        </figure>
+        <img src="assets/images/завод-фон.jpg" alt="завод-фон" class="main-bg">-->
+        <img src="assets/images/завод.jpg" alt="завод-фон" class="main-bg">
         <div class="container s1-container">
             <img src="assets/images/logo.svg" alt="logo" class="logo__img">
             <div class="muha__wrapper">
@@ -40,7 +45,7 @@
     <section class="s2">
         <div class="container s2-container">
             <h1 class="site-title">classic sad story of our cattos</h1>
-            <img src="assets/images/комикс.jpg" alt="cats-comix" class="comix__img">
+            <a href="assets/images/комикс.jpg" data-lightbox="comix" class="comix__img-a"><img src="assets/images/комикс.jpg" alt="cats-comix" class="comix__img"></a>
             <div class="s2-item">
                 <img src="assets/images/облачко.svg" alt="облачко" class="cloud__img">
                 <p>This is abandoned fish cannery, where a friendly family of cryptocats lives. Each of them once stayed on the street and now cats will help millions of abandoned fluffy friends find a loving family.</p>
@@ -68,6 +73,12 @@
         </div>
         <img src="assets/images/bg-img.svg" alt="bg-img" class="background-image second-bg__img">
         <img src="assets/images/bg-img.svg" alt="bg-img" class="background-image third-bg__img">
+        <div class="muha__wrapper muha__wrapper3">
+            <img src="assets/images/muha-wing2.svg" alt="muha-wing2" class="muha-wing2">
+            <img src="assets/images/muha-wing1.svg" alt="muha-wing1" class="muha-wing1">
+            <img src="assets/images/muha-body.svg" alt="muha-body" class="muha-body">
+        </div>
+        <img src="assets/images/flower.svg" alt="flower" class="flower__img">
     </section>
 </main>
 <footer class="footer">
@@ -109,7 +120,8 @@
         <a href="mailto:homelesscats.manager@gmail.com">homelesscats.manager@gmail.com</a>
     </div>
 </footer>
-<!--<script src="assets/js/jquery-3.6.0.min.js"></script>-->
-<!--<script src="assets/js/app.js?ver=1.0.1"></script>-->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/lightbox.min.js"></script>
+<script src="assets/js/app.js?ver=1.0.1"></script>
 </body>
 </html>
