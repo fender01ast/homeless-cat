@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 @font-face {
-    font-family: "OBELIXPROB-CYR";
+    font-family: "ObelixProB-cyr";
     font-style: bold;
     font-weight: 700;
-    src: url("../fonts/OBELIXPROB-CYR.ttf") format("truetype");
+    src: url("../fonts/ObelixProB-cyr.ttf") format("truetype");
 }
 
 @font-face {
@@ -49,7 +49,7 @@ section{
     margin: 0 auto;
 }
 .nav-menu{
-    font-family: "OBELIXPROB-CYR", sans-serif;
+    font-family: "ObelixProB-cyr", sans-serif;
     font-size: 16px;
     color: #fff;
 }
@@ -81,9 +81,6 @@ section{
 .main-bg{
     max-width: 95%;
     position: relative;
-    /*top: 0;
-    left: 0;
-    right: 0;*/
 }
 .logo__img{
     max-width: 40%;
@@ -94,14 +91,9 @@ section{
 .s1{
     min-height: 100vh;
     position: relative;
-    /*background-image: url("../images/завод.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: auto;*/
 }
 .site-title{
-    font-family: 'OBELIXPROB-CYR', sans-serif;
+    font-family: 'ObelixProB-cyr', sans-serif;
     width: 100%;
     text-align: center;
     margin-top: 40px;
@@ -133,7 +125,7 @@ section{
 .cloud__img{
     width: 50%;
     position: absolute;
-    top: -50px;
+    top: -35px;
     left: auto;
     right: auto;
 }
@@ -185,7 +177,7 @@ section{
     width: 100%;
     height: auto;
     position: absolute;
-    top: -80px;
+    top: 50px;
     left: 0;
     right: 0;
     z-index: 1;
@@ -197,12 +189,8 @@ section{
     padding-top: 80px;
     padding-bottom: 70px;
 }
-/*.site-roadmap__li{
-    border: 1px solid #222222;
-    border-radius: 10px;
-}*/
 .site-roadmap li{
-    height: 176px;
+    height: 139px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,12 +205,12 @@ section{
     align-items: center;
     justify-content: flex-end;
     height: 600px;
-    padding-bottom: 60px;
-    font-size: 26px;
+    padding-bottom: 40px;
+    font-size: 18px;
     pointer-events: none;
 }
 .footer__container-2 h2{
-    font-family: 'OBELIXPROB-CYR', sans-serif;
+    font-family: 'ObelixProB-cyr', sans-serif;
     margin-bottom: 35px;
     cursor: default;
 }
@@ -233,7 +221,7 @@ section{
 .footer__container{
     position: absolute;
     width: 90vw;
-    top: -30px;
+    top: 69px;
     left: 5vw;
     display: flex;
     flex-direction: row;
@@ -242,15 +230,15 @@ section{
 }
 .footer__container img{
     width: 15%;
-    transition: .6s ease all;
+    transition: .8s ease all;
     cursor: pointer;
 }
 .footer__container img:hover{
-    transform: translateY(-200px);
+    transform: translateY(-140px);
 }
 .footer-names{
     z-index: 4;
-    margin-top: 250px;
+    margin-top: 168px;
     color: #fff;
     font-size: 24px;
     text-align: center;
@@ -259,10 +247,19 @@ section{
     width: 15%;
 }
 .footer-names__item h3{
-    font-family: 'OBELIXPROB-CYR', sans-serif;
+    font-family: 'ObelixProB-cyr', sans-serif;
     margin-bottom: 10px;
+    cursor: default;
 }
-@media screen and (max-width: 1920px){
+.footer-names__item p{
+    cursor: default;
+}
+.footer-names__item a{
+    margin-top: 15px;
+    font-size: 18px;
+    display: block;
+}
+@media screen and (min-width: 1920px){
     .site-roadmap li{
         height: 169px;
     }
