@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-
 @font-face {
     font-family: "ObelixProB-cyr";
     font-style: bold;
@@ -13,6 +11,8 @@
     font-weight: 400;
     src: url("../fonts/ObelixProIt-cyr.ttf") format("truetype");
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 :root{
     --footer-height: 600px;
@@ -37,6 +37,21 @@ a{
 }
 section{
     position: relative;
+}
+.background-image{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 25px;
+    left: 0;
+    z-index: -1;
+}
+.second-bg__img{
+    top: 150px;
+}
+.third-bg__img{
+    top: auto;
+    bottom: -130px;
 }
 .header{
     position: absolute;
@@ -259,9 +274,91 @@ section{
     font-size: 18px;
     display: block;
 }
+@media screen and (min-width: 1280px){
+    .site-roadmap{
+        padding-top: 54px;
+    }
+    .site-roadmap li{
+        height: 113px;
+    }
+    .cloud__img{
+        width: 70%;
+    }
+    .footer-2__img{
+        top: 165px;
+    }
+    .footer__container{
+        top: 160px;
+    }
+    .footer-names{
+        margin-top: 122px;
+    }
+    .footer__container img:hover{
+        transform: translateY(-100px);
+    }
+    .footer__container-2 h2{
+        margin-bottom: 15px;
+    }
+}
+@media screen and (min-width: 1440px){
+    .site-roadmap{
+        padding-top: 65px;
+    }
+    .site-roadmap li{
+        height: 126px;
+    }
+    .footer__container{
+        top: 125px;
+    }
+    .footer-names{
+        margin-top: 132px;
+    }
+    .cloud__img{
+        top: -25px;
+        width: 50%;
+    }
+    .footer-2__img{
+        top: 50px;
+    }
+    .footer__container img:hover{
+        transform: translateY(-140px);
+    }
+    .footer__container-2 h2{
+        margin-bottom: 35px;
+    }
+}
+@media screen and (min-width: 1600px){
+    .site-roadmap{
+        padding-top: 85px;
+    }
+    .site-roadmap li{
+        height: 139px;
+    }
+    .footer__container{
+        top: 69px;
+    }
+    .footer-names{
+        margin-top: 168px;
+    }
+    .cloud__img{
+        top: -35px;
+    }
+}
 @media screen and (min-width: 1920px){
     .site-roadmap li{
         height: 169px;
+    }
+    .footer__container{
+        top: -36px;
+    }
+    .footer-names{
+        margin-top: 197px;
+    }
+    .cloud__img{
+        top: -64px;
+    }
+    .footer-2__img{
+        top: -65px;
     }
 }
 
