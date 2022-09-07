@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homeless Cat</title>
     <link rel="stylesheet"  href="assets/css/lightbox.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css?ver=1.0.6">
+    <link rel="stylesheet" href="assets/css/style.css?ver=1.0.7">
 </head>
 <body>
-<header class="header">
+<header class="header" id="header">
     <div class="container">
         <nav class="nav-menu">
             <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">comic</a></li>
-                <li><a href="#">roadmap</a></li>
-                <li><a href="#">more</a></li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="#comix">comic</a></li>
+                <li><a href="#roadmap">roadmap</a></li>
+                <li><a href="#footer">more</a></li>
             </ul>
         </nav>
+    </div>
+    <div id="progress-container">
+        <div id="progress" class="progress"></div>
     </div>
 </header>
 <main>
@@ -42,7 +45,7 @@
             </div>
         </div>
     </section>
-    <section class="s2">
+    <section class="s2" id="comix">
         <div class="container s2-container">
             <h1 class="site-title">classic sad story of our cattos</h1>
             <a href="assets/images/комикс.jpg" data-lightbox="comix" class="comix__img-a"><img src="assets/images/комикс.jpg" alt="cats-comix" class="comix__img"></a>
@@ -54,7 +57,7 @@
         </div>
         <img src="assets/images/bg-img.svg" alt="bg-img" class="background-image">
     </section>
-    <section class="s3">
+    <section class="s3" id="roadmap">
         <h2 class="site-title">our roadmap</h2>
         <div class="container s3-container">
             
@@ -81,7 +84,7 @@
         <img src="assets/images/flower.svg" alt="flower" class="flower__img">
     </section>
 </main>
-<footer class="footer">
+<footer class="footer" id="footer">
     <img src="assets/images/footer-2.svg" alt="footer-2" class="footer-2__img">
     <img src="assets/images/footer-1.svg" alt="footer-1" class="footer-1__img">
     <div class="container footer__container">
@@ -119,9 +122,10 @@
         <h2>for cooperation write to us</h2>
         <a href="mailto:homelesscats.manager@gmail.com" target="_blank">homelesscats.manager@gmail.com</a>
     </div>
+    <a href="#header" class="toTopBtn"></a>
 </footer>
 <script src="assets/js/jquery-3.6.0.min.js"></script>
 <script src="assets/js/lightbox.min.js"></script>
-<script src="assets/js/app.js?ver=1.0.6"></script>
+<script src="assets/js/app.js?ver=1.0.7"></script>
 </body>
 </html>

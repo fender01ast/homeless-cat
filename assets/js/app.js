@@ -11,3 +11,29 @@ function zoomout(e){
     var zoomer = e.currentTarget;
     zoomer.style.backgroundImage = "none";
 }
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    let $page = $('html, body');
+    $('a[href*="#"]').click(function() {
+        $page.animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+        return false;
+    });
+
+    let button = $('.toTopBtn');
+    button.fadeOut();
+    $(window).on('scroll', () => {
+        if ($(this).scrollTop() >= 50) {
+            button.fadeIn();
+          } else {
+            button.fadeOut();
+          }
+    });
+
+    $(window).scroll(function() {
+        let ratio = $(document).scrollTop() / (($(document).height() - $(window).height()) / 100);
+        $("#progress").width(ratio + "%");
+    });
+});
