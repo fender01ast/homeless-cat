@@ -2,7 +2,7 @@
     font-family: "ObelixProB-cyr";
     font-style: normal;
     font-weight: normal;
-    src: url("../fonts/ObelixProB-cyr.ttf") format("truetype"),
+    src: /*url("../fonts/ObelixProB-cyr.ttf") format("truetype"),*/
          url("../fonts/ObelixProB-cyr.woff") format("woff"),
          url("../fonts/ObelixProB-cyr.woff2") format("woff2");
 
@@ -59,7 +59,7 @@ section{
 .header{
     position: absolute;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 50px;
     z-index: 3;
 }
 .container{
@@ -106,21 +106,22 @@ section{
 .logo__img{
     max-width: 40%;
     position: absolute;
-    bottom: 220px;
+    bottom: 400px;
     right: 5vw;
 }
 .s1{
     min-height: 100vh;
     position: relative;
+    margin-top: -20px;
 }
 .site-title{
     font-family: 'ObelixProB-cyr', sans-serif;
     width: 100%;
     text-align: center;
     margin-top: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     color: #4d4d50;
-    font-size: 36px;
+    font-size: 46px;
 }
 .s2-item{
     max-width: 50%;
@@ -172,9 +173,10 @@ section{
     color: #222222;
     position: absolute;
     top: 0px;
-    font-size: 26px;
+    font-size: 27px;
     height: 100%;
     padding-top: 85px;
+    font-weight: 600;
 }
 
 .footer{
@@ -284,7 +286,7 @@ section{
 }
 .muha__wrapper{
     position: absolute;
-    bottom: 50%;
+    bottom: 62%;
     right: 6vw;
     transform: scale(0.5);
     animation-duration: 2.5s;
@@ -293,7 +295,7 @@ section{
 }
 .muha__wrapper2{
     right: 22vw;
-    bottom: 59%;
+    bottom: 71%;
     animation-duration: 2.5s;
     animation-name: moving2;
 }
