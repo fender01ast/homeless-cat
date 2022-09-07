@@ -168,8 +168,6 @@ section{
 }
 .site-roadmap{
     list-style: none;
-    /*display: flex;
-    */
     text-align: center;
     color: #222222;
     position: absolute;
@@ -308,7 +306,6 @@ section{
     position: absolute;
     top: -51px;
     left: 57px;
-    /*transition: all .2s ease;*/
     animation-duration: .2s;
     animation-name: wave;
     animation-iteration-count: infinite;
@@ -317,7 +314,6 @@ section{
     position: absolute;
     top: -58px;
     left: 31px;
-    /*transition: all .3s ease;*/
     animation-duration: .2s;
     animation-name: wave2;
     animation-iteration-count: infinite;
@@ -378,12 +374,20 @@ section{
 }
 
 
-figure.zoom{
+figure.zoom,
+.zoom{
 	background-position: 50% 50%;
 	position: absolute;
-	/*width: 500px;*/
+    top: 200px;
+    left: 250px;
+	width: 550px;
+    height: 650px;
 	overflow: hidden;
 	cursor: zoom-in;
+    z-index: 9;
+    background-image: none;
+    /*background-color: #fff;*/
+    border-radius: 12px;
 }
 figure.zoom img:hover{
 	opacity: 0;
@@ -421,6 +425,12 @@ figure.zoom img{
     .footer__container-2 h2{
         margin-bottom: 15px;
     }
+    .zoom{
+        top: 200px;
+        left: 250px;
+        width: 380px;
+        height: 490px;
+    }
 }
 @media screen and (min-width: 1440px){
     .site-roadmap{
@@ -448,10 +458,30 @@ figure.zoom img{
     .footer__container-2 h2{
         margin-bottom: 35px;
     }
+    .zoom{
+        top: 200px;
+        left: 250px;
+        width: 460px;
+        height: 570px;
+    }
+}
+@media screen and (min-width: 1366px){
+    .zoom{
+        top: 200px;
+        left: 250px;
+        width: 425px;
+        height: 535px;
+    }
 }
 @media screen and (min-width: 1500px){
     .site-roadmap li{
         height: 135px;
+    }
+    .zoom{
+        top: 200px;
+        left: 250px;
+        width: 480px;
+        height: 610px;
     }
 }
 
@@ -471,6 +501,12 @@ figure.zoom img{
     .cloud__img{
         top: -35px;
     }
+    .zoom{
+        top: 200px;
+        left: 250px;
+        width: 550px;
+        height: 650px;
+    }
 }
 @media screen and (min-width: 1920px){
     .site-roadmap li{
@@ -487,6 +523,12 @@ figure.zoom img{
     }
     .footer-2__img{
         top: -65px;
+    }
+    .zoom{
+        top: 246px;
+        left: 346px;
+        width: 600px;
+        height: 800px;
     }
 }
 
