@@ -59,7 +59,7 @@ section{
 .header{
     position: absolute;
     width: 100%;
-    margin-top: 50px;
+    padding-top: 120px;
     z-index: 3;
 }
 .container{
@@ -112,7 +112,7 @@ section{
 .s1{
     min-height: 100vh;
     position: relative;
-    margin-top: -20px;
+    margin-top: -80px;
 }
 .site-title{
     font-family: 'ObelixProB-cyr', sans-serif;
@@ -457,7 +457,7 @@ figure.zoom img{
     display: none;
 }
 img.zaka__img{
-    width: 17%;
+    width: 19%;
 }
 @media screen and (min-width: 1280px){
     .site-roadmap{
