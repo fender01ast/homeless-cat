@@ -41,6 +41,7 @@ a{
 section{
     position: relative;
 }
+
 .background-image{
     position: absolute;
     width: 100%;
@@ -57,9 +58,9 @@ section{
     bottom: -130px;
 }
 .header{
-    position: absolute;
+    position: fixed;
     width: 100%;
-    padding-top: 120px;
+    padding-top: 80px;
     z-index: 3;
 }
 .container{
@@ -219,6 +220,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    letter-spacing: 1.2px;
 }
 .footer__container-2{
     position: relative;
@@ -254,12 +256,12 @@ section{
     z-index: 2;
 }
 .footer__container img{
-    width: 15%;
+    width: 13%;
     transition: .8s ease all;
     cursor: pointer;
 }
 .footer__container img:hover{
-    transform: translateY(-140px);
+    transform: translateY(-120px);
 }
 .footer-names{
     z-index: 4;
@@ -512,7 +514,7 @@ img.zaka__img{
         top: 50px;
     }
     .footer__container img:hover{
-        transform: translateY(-140px);
+        transform: translateY(-105px);
     }
     .footer__container-2 h2{
         margin-bottom: 35px;
@@ -568,6 +570,9 @@ img.zaka__img{
     }
 }
 @media screen and (min-width: 1920px){
+    .site-roadmap{
+        font-size: 30px;
+    }
     .site-roadmap li{
         height: 169px;
     }
@@ -590,4 +595,126 @@ img.zaka__img{
         height: 800px;
     }
 }
-
+@media screen and (max-width:1279px) {
+    .logo__img{
+        bottom: 170px;
+    }
+    .s2-item p{
+        margin-bottom: 93px;
+        font-size: 14px;
+    }
+    .cloud__img{
+        top: -25px;
+        width: 70%;
+    }
+    .muha__wrapper{
+        bottom: 47%;
+    }
+    .muha__wrapper2{
+        bottom: 55%;
+    }
+    .site-roadmap{
+        padding-top: 46px;
+        font-size: 22px;
+    }
+    .site-roadmap li{
+        height: 90px;
+    }
+    .footer{
+        margin-top: 50px;
+    }
+    .footer__container{
+        top: 240px;
+    }
+    .footer-2__img{
+        top: 264px;
+    }
+    .footer-names{
+        margin-top: 118px;
+        font-size: 16px;
+    }
+    .footer__container-2{
+        height: 625px;
+    }
+    .footer__container-2 h2{
+        margin-bottom: 12px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .logo__img{
+        bottom: 170px;
+    }
+    .s2-item p{
+        margin-bottom: 93px;
+        font-size: 14px;
+    }
+    .cloud__img{
+        top: -25px;
+        width: 70%;
+    }
+    .zoom{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .logo__img{
+        bottom: 77px;
+    }
+    .muha__wrapper{
+        bottom: 36%;
+    }
+    .muha__wrapper2{
+        bottom: 41px;
+    }
+    .site-title{
+        font-size: 24px;
+        margin-bottom: 45px;
+        margin-top: 35px;
+    }
+    .s2-container{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .s2-item{
+        max-width: 100%;
+        margin-top: 65px;
+    }
+    .cats-gif__img{
+        left: auto;
+    }
+    .comix__img-a{
+        width: 90%;
+    }
+    .cloud__img{
+        width: 53%;
+    }
+    .s2-item p{
+        margin-bottom: 178px;
+    }
+    .site-roadmap{
+        padding-top: 32px;
+        font-size: 18px;
+    }
+    .site-roadmap li{
+        height: 65px;
+    }
+    .muha__wrapper3{
+        right: 1vw;
+    }
+}
+@media screen and (max-width: 479px) {
+    .main-bg{
+        max-width: 100%;
+        top: 95px;
+    }
+    .s1{
+        margin-top: 0;
+        min-height: 90vh;
+    }
+    .header{
+        padding-top: 20px;
+    }
+    .nav-menu{
+        font-size: 12px;
+    }
+}
