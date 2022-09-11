@@ -482,6 +482,9 @@ figure.zoom img{
 img.zaka__img{
     width: 19%;
 }
+.mobile-footer__container{
+    display: none;
+}
 @media screen and (min-width: 1280px){
     .site-roadmap{
         padding-top: 54px;
@@ -678,7 +681,8 @@ img.zaka__img{
         display: none;
     }
 }
-@media screen and (max-width: 767px) {
+/*@media screen and (max-width: 767px) {}*/
+@media screen and (max-width: 896px) {
     .logo__img{
         bottom: 77px;
     }
@@ -696,6 +700,7 @@ img.zaka__img{
     .s2-container{
         justify-content: center;
         flex-direction: column;
+        align-items: center;
     }
     .s2-item{
         max-width: 100%;
@@ -715,28 +720,183 @@ img.zaka__img{
     }*/
     .site-roadmap{
         padding-top: 32px;
-        font-size: 18px;
+        font-size: 16px;
     }
     .site-roadmap li{
         height: 65px;
+        letter-spacing: 1px;
     }
     .muha__wrapper3{
         right: 1vw;
     }
+    .s1{
+        margin-top: -50px;
+    }
+    .header{
+        padding-top: 50px;
+    }
+    .footer__container-2{
+        padding-bottom: 20px;
+        font-size: 14px;
+    }
+    .footer__container-2 a{
+        font-size: 20px;
+    }
+    .desktop-footer__container{
+        display: none;
+    }
+    .mobile-footer__container{
+        display: block;
+    }
+    .container.footer__container{
+        position: relative;
+        left: auto;
+        flex-wrap: wrap;
+        top: 0;
+        align-items: end;
+    }
+    .footer__container img,
+    img.zaka__img{
+        width: 100%;
+    }
+    .mobile-kotick__item{
+        width: 26%;
+    }
+    .footer__container-2{
+        height: auto;
+        margin-top: 30px;
+    }
+    :root{
+        --footer-height: auto;
+    }
+    .footer-1__img,
+    .footer-2__img{
+        display: none;
+    }
+    .footer-names__item{
+        width: 100%;
+        color: #fff;
+        text-align: center;
+    }
+    .footer-names__item p{
+        font-size: 12px;
+    }
+    .footer-names__item{
+        margin: 25px 0;
+    }
+    .footer{
+        background-color: #5A8741;
+        margin-top: 250px;
+    }
+    .footer-1__img{
+        display: block;
+        bottom: 99%;
+        z-index: 1;
+    }
+    .footer__container img:hover{
+        transform: none;
+    }
 }
 @media screen and (max-width: 479px) {
+    .muha__wrapper{
+        bottom: 55%;
+    }
+    .muha__wrapper2{
+        display: none;
+    }
     .main-bg{
         max-width: 100%;
         top: 95px;
     }
     .s1{
         margin-top: 0;
-        min-height: 90vh;
+        min-height: auto;
+        padding-bottom: 110px;
     }
     .header{
         padding-top: 20px;
     }
     .nav-menu{
         font-size: 12px;
+    }
+    .footer-names__item a{
+        font-size: 12px;
+    }
+    .nitka-img{
+        max-width: 100%;
+    }
+    .site-roadmap{
+        padding-top: 21px;
+        font-size: 12px;
+    }
+    .site-roadmap li {
+        height: 46px;
+        letter-spacing: 0px;
+    }
+    .muha__wrapper3{
+        bottom: auto;
+        top: 12%;
+        right: -10px;
+        display: block;
+    }
+    .muha__wrapper4{
+        display: block;
+        bottom: 40px;
+        left: -30px;
+    }
+    .flower__img{
+        bottom: 10%;
+    }
+    .header{
+        padding-top: 0;
+    }
+    .logo__img{
+        bottom: 135px;
+        max-width: 49%;
+    }
+    .zaka__mobile-kotick__item{
+        width: 35%;
+    }
+    .nik__mobile-kotick__item{
+        width: 30%;
+    }
+    .footer__container-2{
+        margin-top: 65px;
+        font-size: 10px;
+        padding-bottom: 60px;
+    }
+    .footer{
+        margin-top: 150px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .site-roadmap{
+        padding-top: 19px;
+    }
+    .site-roadmap li{
+        height: 42px;
+    }
+    .zaka__mobile-kotick__item{
+        width: 33%;
+    }
+    @keyframes moving {
+        0% {
+            transform: rotateZ(0deg) translate(0px, 0px) scale(0.35);
+        }
+      
+        50% {
+            transform: rotateZ(0deg) translate(3px, 25px) scale(0.35);
+        }
+        100% {
+            transform: rotateZ(0deg) translate(0px, 0px) scale(0.35);
+        }
+    }
+    .nav-menu{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .site-roadmap li{
+        height: 40px;
     }
 }
