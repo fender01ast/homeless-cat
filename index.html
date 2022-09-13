@@ -8,17 +8,23 @@
     <link href="assets/images/favicon.png" rel="shortcut icon" type="image/x-icon">
     <link href="assets/images/webclip.png" rel="apple-touch-icon">
     <link rel="stylesheet"  href="assets/css/lightbox.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css?ver=1.1.3">
+    <link rel="stylesheet" href="assets/css/style.css?ver=1.1.4">
 </head>
 <body>
 <header class="header" id="header">
     <div class="container">
         <nav class="nav-menu">
+            <div class="header__links-container">
+                <a href="https://twitter.com/home?lang=ru" target="_blank"><img src="assets/images/twitter.svg" alt="twitter-link"></a>
+                <a href="#" target="_blank"><img src="assets/images/discord.svg" alt="discord-link"></a>
+                <a href="#" target="_blank"><img src="assets/images/me.svg" alt="me-link"></a>
+            </div>
             <ul>
-                <li><a href="index.html">home</a></li>
+                <li><a href="#">mint</a></li>
+                <li><a href="/">home</a></li>
                 <li><a href="#comix">comic</a></li>
                 <li><a href="#roadmap">roadmap</a></li>
-                <li><a href="#footer">more</a></li>
+                <li><a href="#footer">founders</a></li>
             </ul>
         </nav>
     </div>
@@ -29,10 +35,7 @@
 <main>
     <div id="top"></div>
     <section class="s1">
-        <!--<figure class="zoom" onmousemove="zoom(event)" style="background-image: url(assets/images/завод-обрез2.jpg)">
-            <img src="assets/images/compressed/завод-обрез2.jpg" alt="завод" style="max-width: 100%;"/>
-        </figure>-->
-        <div class="zoom" onmousemove="zoom(event)" onmouseout="zoomout(event)"></div>
+        <!--<div class="zoom" onmousemove="zoom(event)" onmouseout="zoomout(event)"></div>-->
         <img src="assets/images/compressed/завод.jpg" alt="завод-фон" class="main-bg">
         <div class="container s1-container">
             <img src="assets/images/logo.svg" alt="logo" class="logo__img">
@@ -89,7 +92,17 @@
             <img src="assets/images/muha-wing1.svg" alt="muha-wing1" class="muha-wing1">
             <img src="assets/images/muha-body.svg" alt="muha-body" class="muha-body">
         </div>
-        <img src="assets/images/flower.svg" alt="flower" class="flower__img">
+        <img src="assets/images/flower3.svg" alt="flower" class="flower__img">
+        <img src="assets/images/flower2.svg" alt="flower" class="flowers flower__img2">
+        <img src="assets/images/flower4.svg" alt="flower" class="flowers flower__img3">
+        <img src="assets/images/flower.svg" alt="flower" class="flowers flower__img4">
+        <img src="assets/images/small-flower.svg" alt="flower" class="flowers small-flowers flower__img5">
+        <img src="assets/images/small-flower2.svg" alt="flower" class="flowers small-flowers flower__img6">
+        <img src="assets/images/small-flower3.svg" alt="flower" class="flowers small-flowers flower__img7">
+        <img src="assets/images/small-flower5.svg" alt="flower" class="flowers small-flowers flower__img8">
+        <img src="assets/images/small-flower2.svg" alt="flower" class="flowers small-flowers flower__img9">
+        <img src="assets/images/small-flower4.svg" alt="flower" class="flowers small-flowers flower__img10">
+        <img src="assets/images/small-flower3.svg" alt="flower" class="flowers small-flowers flower__img11">
     </section>
 </main>
 <footer class="footer" id="footer">
@@ -97,34 +110,51 @@
     <img src="assets/images/footer-1.svg" alt="footer-1" class="footer-1__img">
     <div class="desktop-footer__container">
         <div class="container footer__container">
-            <img src="assets/images/cat1.svg" alt="cat1">
-            <img src="assets/images/cat2.svg" alt="cat2">
-            <img src="assets/images/cat3.svg" alt="cat3" class="zaka__img">
-            <img src="assets/images/cat4.svg" alt="cat4">
-            <img src="assets/images/cat5.svg" alt="cat5">
+            <img src="assets/images/cat1.svg" alt="cat1" class="footer__movable-img">
+            <img src="assets/images/cat2.svg" alt="cat2" class="footer__movable-img">
+            <img src="assets/images/cat3.svg" alt="cat3" class="footer__movable-img zaka__img">
+            <img src="assets/images/cat4.svg" alt="cat4" class="footer__movable-img">
+            <img src="assets/images/cat5.svg" alt="cat5" class="footer__movable-img">
         </div>
         <div class="container footer__container footer-names">
             <div class="footer-names__item">
                 <h3>Seva</h3>
                 <p>Co-founder / Creative Director</p>
-                <a href="https://www.instagram.com/sevacomvilinskiy/" target="_blank">@sevacomvilinskiy</a>
+                <!--<a href="https://www.instagram.com/sevacomvilinskiy/" target="_blank">@sevacomvilinskiy</a>-->
+                <div class="founders__links-container">
+                    <a href="https://www.instagram.com/vilexpo/" target="_blank"><img src="assets/images/instagram.svg" alt="instagram-link__img"></a>
+                    <a href="https://www.linkedin.com/in/vsevolod-vilinskiy-727425249/" target="_blank"><img src="assets/images/in.svg" alt="in-link__img"></a>
+                </div>
             </div>
             <div class="footer-names__item">
                 <h3>Andy</h3>
-                <p>Social manager</p>
+                <p>Social manager</p><br>
+                <div class="founders__links-container">
+                    <a href="https://www.linkedin.com/in/andy-unk-37933a247/" target="_blank"><img src="assets/images/in.svg" alt="in-link__img"></a>
+                </div>
             </div>
             <div class="footer-names__item">
                 <h3>Zaka</h3>
-                <p>Artist / Co-founder</p>
-                <a href="https://www.instagram.com/zakkart_i/" target="_blank">@zakkart_i</a>
+                <p>Artist / Co-founder</p><br class="zaka-br">
+                <!--<a href="https://www.instagram.com/zakkart_i/" target="_blank">@zakkart_i</a>-->
+                <div class="founders__links-container">
+                    <a href="https://www.instagram.com/zakkart_i/" target="_blank"><img src="assets/images/instagram.svg" alt="instagram-link__img"></a>
+                    <a href="https://www.linkedin.com/in/zarina-nurpeissova-8a68a3143/" target="_blank"><img src="assets/images/in.svg" alt="in-link__img"></a>
+                </div>
             </div>
             <div class="footer-names__item">
                 <h3>Nik</h3>
-                <p>Tech Support</p>
+                <p>Tech Support</p><br>
+                <div class="founders__links-container">
+                    <a href="https://www.youtube.com/c/BlockchainDeveloper" target="_blank"><img src="assets/images/youtube.svg" alt="youtube-link__img"></a>
+                </div>
             </div>
             <div class="footer-names__item">
                 <h3>Kazeem</h3>
-                <p>Speaker</p>
+                <p>Speaker</p><br>
+                <div class="founders__links-container">
+                    <a href="https://www.linkedin.com/in/adeyemi-k-sowemimo-7b35436b/" target="_blank"><img src="assets/images/in.svg" alt="in-link__img"></a>
+                </div>
             </div>
         </div>
     </div>
@@ -135,7 +165,11 @@
                 <div class="footer-names__item">
                     <h3>Seva</h3>
                     <p>Co-founder / Creative Director</p>
-                    <a href="https://www.instagram.com/sevacomvilinskiy/" target="_blank">@sevacomvilinskiy</a>
+                    <!--<a href="https://www.instagram.com/sevacomvilinskiy/" target="_blank">@sevacomvilinskiy</a>-->
+                    <div class="founders__links-container">
+                        <a href="https://www.instagram.com/vilexpo/" target="_blank"><img src="assets/images/instagram.svg" alt="instagram-link__img"></a>
+                        <a href="https://www.linkedin.com/in/vsevolod-vilinskiy-727425249/" target="_blank"><img src="assets/images/in.svg" alt="in-link__img"></a>
+                    </div>
                 </div>
             </div>
             <div class="mobile-kotick__item">
@@ -143,7 +177,10 @@
                 <div class="footer-names__item">
                     <h3>Andy</h3>
                     <p>Social manager<br><br></p>
-                    <a href="#" target="_blank" style="visibility: hidden;">text</a>
+                    <!--<a href="#" target="_blank" style="visibility: hidden;">text</a>-->
+                    <div class="founders__links-container">
+                        <a href="https://www.linkedin.com/in/andy-unk-37933a247/" target="_blank"><img src="assets/images/in.svg" alt="in-link__img"></a>
+                    </div>
                 </div>
             </div>
             <div class="mobile-kotick__item zaka__mobile-kotick__item">
@@ -151,7 +188,11 @@
                 <div class="footer-names__item">
                     <h3>Zaka</h3>
                     <p>Artist / Co-founder<br><br></p>
-                    <a href="https://www.instagram.com/zakkart_i/" target="_blank">@zakkart_i</a>
+                    <!--<a href="https://www.instagram.com/zakkart_i/" target="_blank">@zakkart_i</a>-->
+                    <div class="founders__links-container">
+                        <a href="https://www.instagram.com/zakkart_i/" target="_blank"><img src="assets/images/instagram.svg" alt="instagram-link__img"></a>
+                        <a href="https://www.linkedin.com/in/zarina-nurpeissova-8a68a3143/" target="_blank"><img src="assets/images/in.svg" alt="in-link__img"></a>
+                    </div>
                 </div>
             </div>
             <div class="mobile-kotick__item nik__mobile-kotick__item">
@@ -159,6 +200,9 @@
                 <div class="footer-names__item">
                     <h3>Nik</h3>
                     <p>Tech Support</p>
+                    <div class="founders__links-container">
+                        <a href="https://www.youtube.com/c/BlockchainDeveloper" target="_blank"><img src="assets/images/youtube.svg" alt="youtube-link__img"></a>
+                    </div>
                 </div>
             </div>
             <div class="mobile-kotick__item">
@@ -166,6 +210,9 @@
                 <div class="footer-names__item">
                     <h3>Kazeem</h3>
                     <p>Speaker</p>
+                    <div class="founders__links-container">
+                        <a href="https://www.linkedin.com/in/adeyemi-k-sowemimo-7b35436b/" target="_blank"><img src="assets/images/in.svg" alt="in-link__img"></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -178,6 +225,6 @@
 </footer>
 <script src="assets/js/jquery-3.6.0.min.js"></script>
 <script src="assets/js/lightbox.min.js"></script>
-<script src="assets/js/app.js?ver=1.1.3"></script>
+<script src="assets/js/app.js?ver=1.1.4"></script>
 </body>
 </html>

@@ -71,6 +71,9 @@ section{
     font-family: "ObelixProB-cyr", sans-serif;
     font-size: 16px;
     color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .nav-menu ul{
     list-style: none;
@@ -258,12 +261,12 @@ section{
     justify-content: space-around;
     z-index: 2;
 }
-.footer__container img{
+.footer__container:not(.footer-names) img{
     width: 13%;
     transition: .8s ease all;
     cursor: pointer;
 }
-.footer__container img:hover{
+.footer__container:not(.footer-names) img:hover{
     transform: translateY(-120px);
 }
 .footer-names{
@@ -485,7 +488,94 @@ img.zaka__img{
 .mobile-footer__container{
     display: none;
 }
+.header__links-container{
+    margin-right: 20px;
+}
+.header__links-container a{
+    display: inline-block;
+    margin-left: 10px;
+}
+.header__links-container img{
+    height: 25px;
+    transition: all 0.3s ease;
+}
+.header__links-container a:hover img{
+    transform: translateY(-5px);
+}
+.founders__links-container{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.founders__links-container a{
+    display: inline-block;
+    margin-top: 0;
+}
+.founders__links-container a:not(:last-child){
+    margin-right: 8px;
+}
+.founders__links-container img{
+    height: 30px;
+    transition: all 0.3s ease;
+}
+.founders__links-container a:hover img{
+    transform: translateY(-5px);
+}
+.flowers{
+    position: absolute;
+    width: 50px;
+    height: auto;
+}
+.flower__img2{
+    right: 10vw;
+    bottom: 24%;
+}
+.flower__img3{
+    left: 7vw;
+    top: 35%;
+    transform: rotateZ(120deg);
+}
+.flower__img4{
+    right: 18vw;
+    top: 44%;
+    transform: rotateZ(70deg);
+}
+.small-flowers{
+    width: 15px;
+}
+.flower__img5{
+    left: 45vw;
+    top: 18%;
+}
+.flower__img6{
+    left: 16vw;
+    top: 38%;
+}
+.flower__img7{
+    right: 15vw;
+    top: 43%;
+}
+.flower__img8{
+    right: 39vw;
+    top: 53%;
+}
+.flower__img9{
+    right: 7vw;
+    top: 61%;
+}
+.flower__img10{
+    left: 8vw;
+    bottom: 39%;
+}
+.flower__img11{
+    left: 17vw;
+    bottom: 18%;
+}
 @media screen and (min-width: 1280px){
+    .zaka-br{
+        display: none;
+    }
     .site-roadmap{
         padding-top: 54px;
     }
@@ -504,7 +594,7 @@ img.zaka__img{
     .footer-names{
         margin-top: 122px;
     }
-    .footer__container img:hover{
+    .footer__container:not(.footer-names) img:hover{
         transform: translateY(-100px);
     }
     .footer__container-2 h2{
@@ -545,7 +635,7 @@ img.zaka__img{
     .footer-2__img{
         top: 50px;
     }
-    .footer__container img:hover{
+    .footer__container:not(.footer-names) img:hover{
         transform: translateY(-105px);
     }
     .footer__container-2 h2{
@@ -560,6 +650,9 @@ img.zaka__img{
 }
 
 @media screen and (min-width: 1500px){
+    .zaka-br{
+        display: block;
+    }
     .site-roadmap li{
         height: 135px;
     }
@@ -595,6 +688,23 @@ img.zaka__img{
     }
 }
 @media screen and (min-width: 1920px){
+    .flower__img4{
+        right: 18vw;
+        top: 42%;
+    }
+    .flower__img5{
+        top: 16%;
+    }
+    .flower__img6 {
+        left: 19vw;
+        top: 36%;
+    }
+    .flower__img7 {
+        top: 40%;
+    }
+    .flower__img8 {
+        top: 51.5%;
+    }
     .site-roadmap{
         font-size: 30px;
     }
@@ -665,6 +775,14 @@ img.zaka__img{
         margin-bottom: 12px;
     }
 }
+@media screen and (max-width:1279px) {
+    .muha__wrapper2{
+        bottom: 30%;
+    }
+    .site-roadmap{
+        padding-top: 51px;
+    }
+}
 @media screen and (max-width: 991px) {
     .logo__img{
         bottom: 170px;
@@ -683,6 +801,26 @@ img.zaka__img{
 }
 /*@media screen and (max-width: 767px) {}*/
 @media screen and (max-width: 896px) {
+    .flowers{
+        width: 25px;
+    }
+    .small-flowers{
+        width: 10px;
+    }
+    .flower__img4 {
+        right: 2vw;
+        top: 47%;
+    }
+    .flower__img8 {
+        right: 18vw;
+        top: 55%;
+    }
+    .flower__img2{
+        bottom: 26%;
+    }
+    .flower__img3{
+        left: 3vw;
+    }
     .logo__img{
         bottom: 77px;
     }
@@ -755,7 +893,7 @@ img.zaka__img{
         top: 0;
         align-items: end;
     }
-    .footer__container img,
+    .footer__container:not(.footer-names) img,
     img.zaka__img{
         width: 100%;
     }
@@ -793,8 +931,26 @@ img.zaka__img{
         bottom: 99%;
         z-index: 1;
     }
-    .footer__container img:hover{
+    .footer__container:not(.footer-names) img:hover{
         transform: none;
+    }
+    .nav-menu{
+        flex-direction: column-reverse;
+    }
+    .header__links-container{
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    /*.nav-menu ul li:first-child,*/
+    .nav-menu ul li:nth-child(2){
+        display: none;
+    }
+    .nav-menu ul li{
+        width: 85px;
+    }
+    .nav-menu ul li:first-child,
+    .header__links-container a:first-child{
+        margin-left: 0;
     }
 }
 @media screen and (max-width: 479px) {
@@ -869,7 +1025,15 @@ img.zaka__img{
         margin-top: 150px;
     }
 }
+@media screen and (max-width: 390px) {
+    .site-roadmap li{
+        height: 43px;
+    }
+}
 @media screen and (max-width: 375px) {
+    .nav-menu ul li{
+        width: 75px;
+    }
     .site-roadmap{
         padding-top: 19px;
     }
@@ -898,5 +1062,24 @@ img.zaka__img{
 @media screen and (max-width: 360px) {
     .site-roadmap li{
         height: 40px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .site-roadmap{
+        font-size: 10px;
+    }
+    .site-roadmap li{
+        height: 35px;
+        letter-spacing: -0.35px;
+        line-height: 1;
+    }
+    .footer-names__item br{
+        display: none;
+    }
+    .nav-menu{
+        font-size: 9px;
+    }
+    .nav-menu ul li {
+        width: 64px;
     }
 }
