@@ -482,7 +482,10 @@ figure.zoom img{
 .toTopBtn{
     display: none;
 }
-img.zaka__img{
+.footer__container:not(.footer-names) img:nth-child(4){
+    width: 15%;
+}
+.footer__container:not(.footer-names) img.zaka__img{
     width: 19%;
 }
 .mobile-footer__container{
@@ -572,6 +575,10 @@ img.zaka__img{
     left: 17vw;
     bottom: 18%;
 }
+
+
+
+
 @media screen and (min-width: 1280px){
     .zaka-br{
         display: none;
@@ -885,6 +892,7 @@ img.zaka__img{
     }
     .mobile-footer__container{
         display: block;
+        position: relative;
     }
     .container.footer__container{
         position: relative;
@@ -952,6 +960,87 @@ img.zaka__img{
     .header__links-container a:first-child{
         margin-left: 0;
     }
+    /* <mobile-footer> */
+
+    .footer{
+        background-color: transparent;
+    }
+    .footer-1__img{
+        display: none;
+    }
+    .grass-mobile,
+    .grass-mobile2{
+        position: absolute;
+        bottom: -177px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        z-index: 4;
+    }
+    .grass-mobile2{
+        z-index: 2;
+        bottom: 26%;
+    }
+    .kotick-floor{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        position: relative;
+    }
+    .first-floor{
+        z-index: 1;
+        margin-bottom: 114px;
+    }
+    .second-floor{
+        z-index: 3;
+    }
+    .kotick-floor img{
+        width: 30%;
+    }
+    .test123{
+        position: absolute !important;
+        width: 100% !important;
+        left: 0 !important;
+        bottom: 34% !important;
+        top: auto !important;
+        right: 0 !important;
+        z-index: 5;
+    }
+    .test321{
+        bottom: -114px !important;
+    }
+    .footer__container-2{
+        margin-top: 147px !important;
+    }
+    .grass-mobile__container:after,
+    .grass-mobile2__container:after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        bottom: -263px;
+        left: 0;
+        right: 0;
+        z-index: 4;
+        background-color: #5a8741;
+    }
+    .grass-mobile2__container:after{
+        background-color: #90c17a;
+        bottom: -185px;
+        height: 350px;
+        z-index: 2;
+    }
+    img.zaka__img{
+        width: 45%;
+    }
+    .kotick-floor.second-floor img:nth-child(2){
+        width: 34%;
+    }
+
+    /* </mobile-footer> */
 }
 @media screen and (max-width: 479px) {
     .muha__wrapper{
@@ -1058,10 +1147,22 @@ img.zaka__img{
     .nav-menu{
         font-size: 10px;
     }
+    .test123{
+        bottom: 32% !important;
+    }
+    .test321{
+        bottom: -131px !important;
+    }
 }
 @media screen and (max-width: 360px) {
     .site-roadmap li{
         height: 40px;
+    }
+    .first-floor{
+        margin-bottom: 99px;
+    }
+    .grass-mobile{
+        bottom: -160px;
     }
 }
 @media screen and (max-width: 320px) {
@@ -1081,5 +1182,14 @@ img.zaka__img{
     }
     .nav-menu ul li {
         width: 64px;
+    }
+    .grass-mobile{
+        bottom: -140px;
+    }
+    .test123 {
+        bottom: 29% !important;
+    }
+    .test321 {
+        bottom: -131px !important;
     }
 }

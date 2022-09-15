@@ -39,4 +39,15 @@ document.addEventListener("DOMContentLoaded", function(){
         let ratio = $(document).scrollTop() / (($(document).height() - $(window).height()) / 100);
         $("#progress").width(ratio + "%");
     });
+
+
+    if ( ($( window ).width() <= 767) || ($( window ).width() >= 480) ) {
+        let liElement = $('.site-roadmap li');
+        let ulElement = $('ul.site-roadmap');
+        console.log(ulElement);
+        /*liElement.style.height = "9.5%";*/
+        liElement.height('9.5%');
+        /*ulElement.style.paddingTop = "5%";*/
+        ulElement.css('padding-top', '5%');
+    }
 });
