@@ -44,10 +44,7 @@ document.addEventListener("DOMContentLoaded", function(){
     if ( ($( window ).width() <= 767) || ($( window ).width() >= 480) ) {
         let liElement = $('.site-roadmap li');
         let ulElement = $('ul.site-roadmap');
-        console.log(ulElement);
-        /*liElement.style.height = "9.5%";*/
         liElement.height('9.5%');
-        /*ulElement.style.paddingTop = "5%";*/
         ulElement.css('padding-top', '5%');
     }
 });
