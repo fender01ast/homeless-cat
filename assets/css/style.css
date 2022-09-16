@@ -997,7 +997,7 @@ figure.zoom img{
         z-index: 3;
     }
     .kotick-floor img{
-        width: 30%;
+        width: 27%;
     }
     .test123{
         position: absolute !important;
@@ -1034,13 +1034,41 @@ figure.zoom img{
         z-index: 2;
     }
     img.zaka__img{
-        width: 45%;
+        width: 41%;
     }
     .kotick-floor.second-floor img:nth-child(2){
-        width: 34%;
+        width: 31%;
     }
 
     /* </mobile-footer> */
+
+    .flower__img5{
+        top: 21%;
+    }
+    @keyframes moving {
+        0% {
+            transform: rotateZ(0deg) translate(0px, 0px) scale(0.3);
+        }
+      
+        50% {
+            transform: rotateZ(0deg) translate(3px, 25px) scale(0.3);
+        }
+        100% {
+            transform: rotateZ(0deg) translate(0px, 0px) scale(0.3);
+        }
+    }
+    @keyframes moving3 {
+        0% {
+            transform: rotateZ(0deg) translate(3px, 25px) scale(0.2) rotateY(180deg);
+        }
+      
+        50% {
+            transform: rotateZ(0deg) translate(0px, 0px) scale(0.2) rotateY(180deg);
+        }
+        100% {
+            transform: rotateZ(0deg) translate(3px, 25px) scale(0.2) rotateY(180deg);
+        }
+    }
 }
 @media screen and (max-width: 479px) {
     .muha__wrapper{
