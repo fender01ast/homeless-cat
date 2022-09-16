@@ -61,7 +61,7 @@ section{
     position: fixed;
     width: 100%;
     padding-top: 80px;
-    z-index: 3;
+    z-index: 10;
 }
 .container{
     max-width: 90vw;
@@ -1162,14 +1162,14 @@ figure.zoom img{
     }
     @keyframes moving {
         0% {
-            transform: rotateZ(0deg) translate(0px, 0px) scale(0.35);
+            transform: rotateZ(0deg) translate(0px, 0px) scale(0.2);
         }
       
         50% {
-            transform: rotateZ(0deg) translate(3px, 25px) scale(0.35);
+            transform: rotateZ(0deg) translate(3px, 25px) scale(0.2);
         }
         100% {
-            transform: rotateZ(0deg) translate(0px, 0px) scale(0.35);
+            transform: rotateZ(0deg) translate(0px, 0px) scale(0.2);
         }
     }
     .nav-menu{
@@ -1219,5 +1219,8 @@ figure.zoom img{
     }
     .test321 {
         bottom: -131px !important;
+    }
+    .flower__img5{
+        top: 24%;
     }
 }
