@@ -17,6 +17,8 @@ if ( $( window ).width() >= 992 ) {
 
 document.addEventListener("DOMContentLoaded", function(){
 
+    new WOW().init();
+    
     let $page = $('html, body');
     $('a[href*="#"]').click(function() {
         $page.animate({
