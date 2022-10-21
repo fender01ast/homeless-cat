@@ -88,6 +88,9 @@ section{
     transition: all 0.3s ease;
     border-radius: 0 0 9px 9px;
 }
+.nav-menu ul li:last-child{
+    width: 150px;
+}
 .nav-menu ul li:hover{
     background-color: #6d6d6d;
 }
@@ -575,7 +578,12 @@ figure.zoom img{
     left: 17vw;
     bottom: 18%;
 }
-
+.footer-names__item:nth-child(1),
+.footer-names__item:nth-child(2),
+.footer-names__item:nth-child(3){
+    left: -30px;
+    position: relative;
+}
 
 
 
@@ -640,7 +648,7 @@ figure.zoom img{
         width: 50%;
     }
     .footer-2__img{
-        top: 50px;
+        top: 69px;
     }
     .footer__container:not(.footer-names) img:hover{
         transform: translateY(-105px);
@@ -953,12 +961,27 @@ figure.zoom img{
     .nav-menu ul li:nth-child(2){
         display: none;
     }
+    .nav-menu ul li:last-child{
+        width: 98px;
+    }
+    .nav-menu ul li:first-child{
+        display: none;
+    }
+    .nav-menu ul li:nth-child(3){
+        margin-left: 0;
+    }
+    .header .container{
+        max-width: 95vw;
+    }
     .nav-menu ul li{
         width: 85px;
     }
     .nav-menu ul li:first-child,
     .header__links-container a:first-child{
         margin-left: 0;
+    }
+    .footer-names__item:nth-child(1), .footer-names__item:nth-child(2), .footer-names__item:nth-child(3){
+        left: auto;
     }
     /* <mobile-footer> */
 
